@@ -19,7 +19,7 @@ function VideoSidebar({ likes, messages, shares }) {
             onClick={(e) => setLiked(true)}
           />
         )}
-        <p>{liked ? likes + 1 : likes}</p>
+        <p>{liked ? parseInt(likes) + 1 : likes}</p>
       </div>
       <div className="videoSidebar_button">
         <MessageIcon fontSize="large" />
